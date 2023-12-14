@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="TicketWave" content="Tela para acesso ao login">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <title>TicketWave - Login</title>
+    <link rel="icon" href="./img/logo-semfundo.png" type="image/Vector">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="logo-login" src="./img/LOGO.png" alt="Logo do site" height="50" width="175">
+        <a class="meuBotaoDois" href="index.html">Voltar</a>
+    </header>
+
+    <br><br>
+
+    <!--
+    <div class="box">
+        <form action="">
+            <input class="nome" type="text" name="nome" placeholder="nome">
+            <input class="cpf" type="text" name="cpf" placeholder="cpf">
+            <input class="telefone" type="text" name="telefone" placeholder="telefone">
+            <input class="login" type="text" name="login" placeholder="email">
+            <input class="senha" type="password" name="senha" placeholder="senha">
+            <button class="meuBotao">Cadastrar</button>
+        </form>
+    </div>
+    -->
+    
+
+    
+    <main id="container">
+        <form id="dadosLogin_form">
+            <div id="form_header">
+                <center>
+                    <h3 class="h3Dois">Cadastro</h3>
+                </center>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <h2>Nome Completo:</h2>
+                    <div class="input-field">
+                         <input class="nome" type="text" name="nome" placeholder="">
+                    </div>
+                </div>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <h2>CPF:</h2>
+                    <div class="input-field">
+                        <input class="cpf" type="text" name="cpf" placeholder="" maxlength="11" pattern="[0-9]{11}" >
+                    </div>
+                </div>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <h2>Telefone:</h2>
+                    <div class="input-field">
+                        <input class="telefone" type="text" name="telefone" placeholder="">
+                    </div>
+                </div>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <h2>E-mail:</h2>
+                    <div class="input-field">
+                        <input class="login" type="text" name="login" placeholder="">
+                    </div>
+                </div>
+            </div>
+
+            <div id="inputs">
+                <div class="input-box">
+                    <h2>Criar Senha:</h2>
+                    <div class="input-field">
+                        <input class="senha" type="password" name="senha" placeholder="">
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <br>
+
+            <div>
+                <center>
+                    <button class="meuBotao">Cadastrar</button>
+                </center>
+            </div>
+
+            <br>
+
+        </form>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2023 TicketWave. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+

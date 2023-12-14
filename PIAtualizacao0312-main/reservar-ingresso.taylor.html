@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TicketWave - Reserva de Ingressos</title>
+  <link rel="icon" href="./img/logo-semfundo.png" type="image/Vector">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+<body class="reservar-ingressos">
+  <!--CABEÇALHO-->
+  <!--CABEÇALHO-->
+  <header class="cabecalho">
+    <img src="./img/LOGO.png" alt="logo da empresa" width="185" height="60">
+    <nav>
+      <ul class="menu-navegacao">
+        <li><a href="inicial-pos-login.html">Início</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+        <li><button class="botao-dados-usuario"><svg id="user-login-icon" xmlns="http://www.w3.org/2000/svg" height="24"
+              width="21"
+              viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+              <path fill="#70008f"
+                d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+            </svg><a class="meu-perfil" href="dados-usuario.html">Meu Perfil</a></button></li>
+        <li class="meu-ingresso"><a href="meus-ingressos.html"><button type="button" id="botao-meus-eventos"
+              class="btn btn-outline-dark"><svg xmlns="http://www.w3.org/2000/svg" height="0.875em"
+                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"
+                  fill="#b127d9" />
+              </svg>Meus Ingressos</button></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container-reservar">
+    <div class="header-reservar">
+      <img src="./img/taylor.png" alt="Evento" class="image" width="100" height="" />
+    </div>
+
+    <div class="title-reservar">
+      <h1>The Eras Tour</h1>
+    </div>
+
+    <div class="calendar">
+      <label for="data"><svg xmlns="http://www.w3.org/2000/svg" height="20" width="18.5"
+          viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+          <path fill="#3c0042"
+            d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" />
+        </svg>  09/12/2023 - Sábado - São Paulo</label>
+    </div>
+    <div class="ticket-options">
+      <div class="ticket-category">
+        <label for="pista">Pista:</label>
+        <span class="quantidade">Qtd:</span>
+        <input type="number" id="pista" name="pista" min="0" max="3" value="0" />
+      </div>
+
+      <div class="ticket-category">
+        <label for="front">Front-Stage:</label>
+        <span class="quantidade">Qtd:</span>
+        <input type="number" id="front" name="front" min="0" max="3" value="0" />
+      </div>
+
+      <div class="ticket-category">
+        <label for="camarote">Camarote:</label>
+        <span class="quantidade">Qtd:</span>
+        <input type="number" id="camarote" name="camarote" min="0" max="3" value="0" />
+      </div>
+      <div onclick="confirmarReserva()" class="Botao_verde-reservar">Continuar</div>
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <footer class="reservar-rodape">
+    <div class="container">
+      <div class="footer-content">
+        <p>© 2023 TicketWave. Todos os direitos reservados.</p>
+        <a class="duvidas" href="#">Dúvidas Frequentes</a>
+        <div class="redes">
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+              fill="white" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+              fill="white" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!--
+  <script>
+
+    function confirmarReserva() {
+      // Exibe um popup de confirmação
+      var confirmacao = window.confirm("Você tem certeza que deseja reservar os ingressos?");
+
+      // Se o usuário clicar em "OK" (true), faz a reserva
+      if (confirmacao) {
+        enviarReservas();
+      } else {
+        // Caso contrário, não faz nada ou mostra uma mensagem de cancelamento
+        console.log("Reserva cancelada pelo usuário.");
+      }
+    }
+
+    function enviarReservas() {
+      const token = localStorage.getItem('token')
+
+      var pista = document.getElementById("pista").value;
+      var front = document.getElementById("front").value;
+      //var camarote = document.getElementById("camarote").value;
+
+      // Cria um objeto com os valores
+      var reservas = {
+        ingresso: [
+          { id: "14", quantidade: parseInt(pista) },
+          //  { id: "12", quantidade: parseInt(front) },
+          //{ id: "id_do_camarote", quantidade: parseInt(camarote) },
+        ],
+
+      };
+
+      //Faz a chamada fetch
+      fetch("http://localhost:8080/api/reservas", {
+
+        method: "POST",
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+          'Authorization': ` ${token}`
+
+        },
+        body: JSON.stringify(reservas),
+      })
+        .then(response => response.text())
+        .then(data => {
+          // Manipula a resposta do servidor (opcional)
+          window.alert("Reserva concluída com sucesso! Pressione OK para visualizá-la.");
+          console.log(data);
+          window.location.href = "resumo-reserva.html";
+        })
+        .catch(error => {
+          // Manipula erros (opcional)
+          console.error("Erro:", error);
+        });
+    }
+  </script>
+-->
+</body>
+
+</html>
